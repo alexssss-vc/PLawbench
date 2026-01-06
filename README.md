@@ -42,4 +42,4 @@ In real legal practice, user queries are often vague, logically inconsistent, em
 | Qwen3-235b-a22b-thinking-2507      | 55.74      |
 | GPT-4o-0806                        | 39.26      |
 
-![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Leader%20Board.png)
+![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/LeaderBoard.png)
