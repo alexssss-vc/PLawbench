@@ -11,11 +11,13 @@ PLawBench is a rubric-based benchmark designed to evaluate the performance of la
 
 Dataset Description:
 
-case analysis（total 250）.jsonl consists of case analysis questions. We have open-sourced a total of 250 questions, including the questions, reference answers, scoring rubrics, and score sheets. 
+Task1:Publical Legal Consultation.json consists of legal consultation questions. We have open-sourced a total of 18 questions, including the consultation scenarios and scoring rubrics.
 
-consultation.json consists of legal consultation questions. We have open-sourced a total of 18 questions, including the consultation scenarios and scoring rubrics.
+Task2:Practical Case Analysis.jsonl consists of case analysis questions. We have open-sourced a total of 250 questions, including the questions, reference answers, scoring rubrics, and score sheets. 
 
-defendant.json and plaintiff.json are legal writing tasks for drafting statements of defense and complaints, respectively. We have open-sourced a total of 12 questions in total, including the writing scenarios and scoring rubrics.
+Task3:Legal Document Generation defendant.json and Task3:Legal Document Generation plaintiff.json are legal writing tasks for drafting statements of defense and complaints, respectively. We have open-sourced a total of 12 questions in total, including the writing scenarios and scoring rubrics.
+
+# Experiment Results
 
 # Contributions
 Our work makes three main contributions:
