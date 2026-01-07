@@ -20,13 +20,15 @@ A contrasting example:rubric-based approach(Evaluation B)can identify situations
 
 Dataset Description:
 
+You can check Example Qustions.xlsx to see 3 examples of our benckmark(them have been translated into English).
+
+And we also open source some questions of our benchmark:
+
 Task1:Publical Legal Consultation.json consists of legal consultation questions. We have open-sourced a total of 18 questions, including the consultation scenarios and scoring rubrics.
 
 Task2:Practical Case Analysis.jsonl consists of case analysis questions. We have open-sourced a total of 250 questions, including the questions, reference answers, scoring rubrics, and score sheets. 
 
 Task3:Legal Document Generation defendant.json and Task3:Legal Document Generation plaintiff.json are legal writing tasks for drafting statements of defense and complaints, respectively. We have open-sourced a total of 12 questions in total, including the writing scenarios and scoring rubrics.
-
-You can check Example Questions to see three examples of our benchmark.
 
 # Experiment Results
 
