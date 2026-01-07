@@ -3,11 +3,20 @@
 # Introduction
 PLawBench is a rubric-based benchmark designed to evaluate the performance of large language models (LLMs) in legal practice. It includes three legal tasks: legal consultation, case analysis, and legal document drafting, covering a wide range of real-world legal domains such as personal affairs, marriage and family law, intellectual property, and criminal litigation. The benchmark aims to evaluate LLMs’ practical capabilities in handling practical legal tasks.
 
+![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/over%20review.png)
+
+Overall framework of PLawBench illustrates a four-step pipeline:collecting multi-source legal data,expert annotation into three task types,LLM-based inference on these tasks,and rubric-based evaluation of the LLM outputs by a judge model.
+
 1. In the public legal consultation task, we draw on situations commonly encountered by lawyers to simulate the interaction between clients and lawyers. This task tests whether the model can correctly understand users’ legal needs, thereby identifying and eliciting key facts that remain undisclosed by the parties.
    
 2. In the case analysis task, each case is structured into four parts: conclusion, legal facts, reasoning, and legal provisions, with dedicated rubrics designed for each. For selected questions, we further specify particular legal reasoning paths to assess the model’s ability to conduct structured and sound legal reasoning in real-world cases.
    
 3. In the legal document drafting task,  models are required to generate legal documents, such as complaints and statements of defense, based on provided scenarios. This task aims to evaluate the models' proficiency in professional legal writing.
+
+A contrasting example:rubric-based approach(Evaluation B)can identify situations that appear accurate on the surface but are actually flawed in the reasoning process,while rubric-free approach (Evaluation A)cannot do this, potentially exposing users to significiant legal risks in practice.
+
+![image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/Figure2.png)
+
 
 Dataset Description:
 
@@ -17,7 +26,17 @@ Task2:Practical Case Analysis.jsonl consists of case analysis questions. We have
 
 Task3:Legal Document Generation defendant.json and Task3:Legal Document Generation plaintiff.json are legal writing tasks for drafting statements of defense and complaints, respectively. We have open-sourced a total of 12 questions in total, including the writing scenarios and scoring rubrics.
 
+You can check Example Questions to see three examples of our benchmark.
+
 # Experiment Results
+
+You can check ranking below to see Models' Scores.Besides,we also design a some Sophisticated Cases like:
+![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/Figure3.png)
+
+Two legal reasoning modes:clear-out cases judged directly by matching key point(top),and sophisticated cases evaluated through step-by-step legal reasoning over intermediate questions(bottom).
+This Figure shows Performance drop in reasoning tasks under sequential constraints.
+
+![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/Table-5.png)
 
 # Contributions
 Our work makes three main contributions:
