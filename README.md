@@ -31,17 +31,21 @@ In real legal practice, user queries are often vague, logically inconsistent, em
 3.Task-Specific Rubrics:Our evaluation framework adopts personalized, task-specific rubrics annotated by legal experts, moving beyond purely outcome-based or form-based metrics to assess substantive legal reasoning and decision-making processes.For each type of legal task, legal experts first define a rubric framework tailored to the task’s reasoning requirements. Subsequently, they annotate case-specific rubrics for each individual legal scenario. This two-stage annotation process ensures that evaluation criteria are both principled and context-sensitive, enabling a more fine-grained,comprehensive, and realistic assessment of LLM performance in legal practice settings.
 
 # ranking
-|Models                              |Scoring Rate|
-|------------------------------------|------------|
-| GPT5.2-1211-global                 | 68.13      |
-| GPT5-0807-global                   | 65.87      |
-| gemini3.0-pro-preview              | 65.16      |
-| claude-sonnet-4-5-20250929         | 64.20      |
-| Qwen3-max-20250923                 | 64.10      |
-| Gemini2.5-Pro-0617                 | 62.54      |
-| kimi-k2-0711-preview               | 60.64      |
-| DeepSeek-V3.2 -exp-inner           | 58.43      |
-| Qwen3-235b-a22b-thinking-2507      | 55.74      |
-| GPT-4o-0806                        | 39.26      |
+|Models                               |Overall|Task1:Public Legal Consultation|Task2:Practical Case Analysis|Conslusion|Facts|Reasoning|Statute|Task3:Legal Document Generation|Defendant|Plaintff|
+|:------------------------------------|:----------:|:-----------------------------:|:---------------------------:|:--------:|:---:|:-------:|:-----:|:-----------------------------:|:-------:|:------:|
+| GPT5.2-1211-global                  |68.13|79.57|66.37|69.93|88.26|60.38|48.59|63.42|68.58|58.25|
+| GPT5-0807-global                    |65.87|83.67|63.93|66.91|87.32|61.99|35.75|57.24|66.50|47.98|
+| gemini3.0-pro-preview               |65.16|65.27|64.99|71.75|78.73|64.64|45.98|65.36|65.30|65.41|
+| claude-sonnet-4-5-20250929          |64.20|67.26|67.37|67.53|88.41|62.95|48.44|56.54|58.80|54.28|
+| Qwen3-max-20250923                  |64.10|75.76|67.17|67.52|90.97|62.75|45.10|53.38|57.43|49.33|
+| Gemini2.5-Pro-0617                  |62.54|71.28|63.82|69.59|78.29|63.94|43.49|54.57|58.25|50.88|
+| kimi-k2-0711-preview                |60.64|67.27|62.16|65.55|81.96|58.56|43.28|53.68|60.71|46.65|
+| DeepSeek-V3.2 -exp-inner            |58.43|70.01|63.93|63.99|86.49|59.23|43.95|41.54|48.74|34.33|
+| Qwen3-235b-a22b-thinking-2507       |55.74|60.64|64.84|64.83|89.23|59.97|43.49|37.32|44.37|30.26|
+| GPT-4o-0806                         |39.26|47.10|42.00|54.83|67.90|34.90|16.15|29.47|33.88|25.05|
+
+Overall performance(%)of evaluated models across three primary tasks.Task 2 Average denotes the aggregate scoring rate derived from the specific rubrics of all four sub-dimensions.The overall score is calculated as a weighted mean of Tasks 1,2,and 3(with weights 2:5:3,reflecting the number of questions in each task).
+
+# Leader Board
 
 ![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Leaderboard.png)
