@@ -20,23 +20,23 @@ A contrasting example:rubric-based approach(Evaluation B)can identify situations
 
 Dataset Description:
 
-You can check Example Qustions.xlsx to see 3 examples of our benckmark(them have been translated into English).
+You can check Example Questions.json to see 3 examples of our benchmark (they have been translated into English).
 
 And we also open source some questions of our benchmark:
 
-Task1:Publical Legal Consultation.json consists of legal consultation questions. We have open-sourced a total of 18 questions, including the consultation scenarios and scoring rubrics.
+Task1:Public Legal Consultation.json consists of legal consultation questions. We have open-sourced a total of 18 questions, including the consultation scenarios and scoring rubrics.
 
 Task2:Practical Case Analysis.jsonl consists of case analysis questions. We have open-sourced a total of 250 questions, including the questions, reference answers, scoring rubrics, and score sheets. 
 
 Task3:Legal Document Generation defendant.json and Task3:Legal Document Generation plaintiff.json are legal writing tasks for drafting statements of defense and complaints, respectively. We have open-sourced a total of 12 questions in total, including the writing scenarios and scoring rubrics.
 
 # Experiment Results
+The ranking below presents the models' scores. In addition,we design a set of Sophisticated Cases:
 
-You can check ranking below to see Models' Scores.Besides,we also design a some Sophisticated Cases like:
 ![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/Figure3.png)
 
-Two legal reasoning modes:clear-out cases judged directly by matching key point(top),and sophisticated cases evaluated through step-by-step legal reasoning over intermediate questions(bottom).
-This Figure shows Performance drop in reasoning tasks under sequential constraints.
+Two legal reasoning modes:Clear-out Cases judged directly by matching key point (top), and Sophisticated Cases evaluated through step-by-step legal reasoning over intermediate questions (bottom).
+This Figure shows Performance Drop in reasoning tasks under sequential constraints.
 
 ![Image text](https://github.com/alexssss-vc/PLawbench/blob/main/Images/Table-5.png)
 
@@ -51,8 +51,8 @@ In real legal practice, user queries are often vague, logically inconsistent, em
 
 3.Task-Specific Rubrics:Our evaluation framework adopts personalized, task-specific rubrics annotated by legal experts, moving beyond purely outcome-based or form-based metrics to assess substantive legal reasoning and decision-making processes.For each type of legal task, legal experts first define a rubric framework tailored to the task’s reasoning requirements. Subsequently, they annotate case-specific rubrics for each individual legal scenario. This two-stage annotation process ensures that evaluation criteria are both principled and context-sensitive, enabling a more fine-grained,comprehensive, and realistic assessment of LLM performance in legal practice settings.
 
-# ranking
-|Models                               |Overall|Task1:Public Legal Consultation|Task2:Practical Case Analysis|Conslusion|Facts|Reasoning|Statute|Task3:Legal Document Generation|Defendant|Plaintff|
+# Ranking
+|Models                               |Overall|Task1:Public Legal Consultation|Task2:Practical Case Analysis|Conclusion|Facts|Reasoning|Statute|Task3:Legal Document Generation|Defendant|Plaintiff|
 |:------------------------------------|:----------:|:-----------------------------:|:---------------------------:|:--------:|:---:|:-------:|:-----:|:-----------------------------:|:-------:|:------:|
 | GPT5.2-1211-global                  |68.13|79.57|66.37|69.93|88.26|60.38|48.59|63.42|68.58|58.25|
 | GPT5-0807-global                    |65.87|83.67|63.93|66.91|87.32|61.99|35.75|57.24|66.50|47.98|
@@ -65,7 +65,7 @@ In real legal practice, user queries are often vague, logically inconsistent, em
 | Qwen3-235b-a22b-thinking-2507       |55.74|60.64|64.84|64.83|89.23|59.97|43.49|37.32|44.37|30.26|
 | GPT-4o-0806                         |39.26|47.10|42.00|54.83|67.90|34.90|16.15|29.47|33.88|25.05|
 
-Overall performance(%)of evaluated models across three primary tasks.Task 2 Average denotes the aggregate scoring rate derived from the specific rubrics of all four sub-dimensions.The overall score is calculated as a weighted mean of Tasks 1,2,and 3(with weights 2:5:3,reflecting the number of questions in each task).
+Overall performance(%)of evaluated models across three primary tasks. Task 2 Average denotes the aggregate scoring rate derived from the specific rubrics of all four sub-dimensions. The overall score is calculated as a weighted mean of Tasks 1,2,and 3 (with weights 2:5:3, reflecting the number of questions in each task).
 
 # Leader Board
 
