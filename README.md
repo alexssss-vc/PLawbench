@@ -21,6 +21,7 @@ A contrasting example:rubric-based approach(Evaluation B)can identify situations
 Dataset Description:
 
 You can check Example Questions.json to see 3 examples of our benchmark (they have been translated into English).
+Case Study Annotation Guidelines.pdf is part of our annotation guidelines.
 
 And we also open source some questions of our benchmark:
 
